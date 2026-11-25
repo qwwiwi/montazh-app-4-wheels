@@ -1,0 +1,456 @@
+{
+  "shots": [
+    {
+      "from": 0,
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "на",
+        "after": 3.68,
+        "before": 3.71
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "И",
+        "after": 6.64,
+        "before": 6.67
+      },
+      "type": "speaker"
+    },
+    {
+      "from": {
+        "word": "выше",
+        "after": 8.44,
+        "before": 8.47
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "схеме",
+        "after": 12.2,
+        "before": 12.23
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "рисунок",
+        "after": 14.28,
+        "before": 14.31
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "крайние",
+        "after": 17.68,
+        "before": 17.71
+      },
+      "type": "speaker"
+    },
+    {
+      "from": {
+        "word": "пишет",
+        "after": 19.22,
+        "before": 19.25
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "И",
+        "after": 23.52,
+        "before": 23.55
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "даже",
+        "after": 25.88,
+        "before": 25.91
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "наблюдения",
+        "after": 29.02,
+        "before": 29.05
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "Эти",
+        "after": 31.04,
+        "before": 31.07
+      },
+      "type": "speaker"
+    },
+    {
+      "from": {
+        "word": "повторить.",
+        "after": 32.44,
+        "before": 32.47
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "сезонные",
+        "after": 35.0,
+        "before": 35.03
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "выходные",
+        "after": 38.24,
+        "before": 38.27
+      },
+      "type": "split"
+    }
+  ],
+  "cta": {
+    "from": {
+      "word": "повторить.",
+      "after": 32.44,
+      "before": 32.47
+    },
+    "to": {
+      "word": "выходные",
+      "after": 38.24,
+      "before": 38.27
+    },
+    "word": "ВЫХОДНЫЕ",
+    "word_anchor": {
+      "word": "«выходные»",
+      "after": 33.44,
+      "before": 33.47
+    }
+  },
+  "scenes": [
+    {
+      "shot": 0,
+      "kind": "hc_services",
+      "bg": "dark",
+      "intro": {
+        "text": "Карта неба",
+        "at": 0.0
+      },
+      "items": [
+        {
+          "text": "Север",
+          "at": 0.454
+        },
+        {
+          "text": "Компас",
+          "at": 1.362,
+          "show_at": 0.272
+        },
+        {
+          "text": "Горизонт",
+          "at": 2.362
+        }
+      ],
+      "hook": true
+    },
+    {
+      "shot": 1,
+      "kind": "hc_steps",
+      "bg": "dark",
+      "steps": [
+        {
+          "t": "Расскажу",
+          "at": 3.707
+        },
+        {
+          "t": "Агенты",
+          "at": 4.513
+        },
+        {
+          "t": "Автоматизация",
+          "at": 5.32
+        }
+      ],
+      "result": {
+        "label": "Ваша работа",
+        "wait": "вручную",
+        "done": "сама",
+        "at": 5.98
+      }
+    },
+    {
+      "shot": 3,
+      "kind": "hc_event",
+      "bg": "dark",
+      "b1": {
+        "text": "Следующее наблюдение",
+        "link": "Календарь"
+      },
+      "b2": {
+        "tag": "ПЛАН",
+        "text": "После заката",
+        "at": 8.555
+      },
+      "wl": {
+        "values": [
+          "18:59",
+          "19:00"
+        ],
+        "count_at": 9.308,
+        "count_end_at": 9.685,
+        "label": "по Москве",
+        "label_at": 9.873,
+        "field": "Площадка",
+        "button": "Прийти",
+        "done": "Приду",
+        "click_at": 10.815
+      }
+    },
+    {
+      "shot": 4,
+      "kind": "hc_links",
+      "bg": "dark",
+      "b1": {
+        "text": "Ссылки ниже"
+      },
+      "b2": {
+        "tag": "ЭФИР",
+        "text": "завтра",
+        "at": 12.448
+      },
+      "wl": {
+        "label": "Пишите кодовое слово",
+        "type_at": 12.921,
+        "at": 12.658,
+        "field": "Комментарий",
+        "button": "Отправить"
+      }
+    },
+    {
+      "shot": 5,
+      "kind": "hc_growth",
+      "bg": "dark",
+      "eyebrow": "С агентами",
+      "title": "Команда",
+      "mark": {
+        "text": "растёт",
+        "at": 14.573
+      },
+      "items": [
+        {
+          "text": "клиенты",
+          "at": 15.253
+        },
+        {
+          "text": "больше",
+          "at": 16.103
+        }
+      ],
+      "strip": [
+        {
+          "value": "=",
+          "label": "команда"
+        },
+        {
+          "value": "↑",
+          "label": "клиенты",
+          "at": 16.783
+        }
+      ]
+    },
+    {
+      "shot": 7,
+      "kind": "hc_audience",
+      "bg": "dark",
+      "cards": [
+        {
+          "av": "С",
+          "h": "Специалист",
+          "p": "услуги",
+          "tag": "есть"
+        },
+        {
+          "av": "Н",
+          "h": "Начинающий",
+          "p": "нет услуг",
+          "p_at": 21.317,
+          "tag": "вы",
+          "hot_at": 19.812,
+          "tag_at": 20.672
+        }
+      ]
+    },
+    {
+      "shot": 8,
+      "kind": "hc_hub",
+      "bg": "dark",
+      "eyebrow": "Помогать",
+      "center": "Специалист",
+      "nodes": [
+        {
+          "text": "Реклама",
+          "x": 480,
+          "y": 150,
+          "at": 23.585
+        },
+        {
+          "text": "Вы + агенты",
+          "x": 480,
+          "y": 690,
+          "hot": true,
+          "at": 24.236
+        }
+      ],
+      "chips": [
+        {
+          "text": "помогаете",
+          "at": 24.65
+        },
+        {
+          "text": "людям",
+          "at": 25.123
+        }
+      ]
+    },
+    {
+      "shot": 9,
+      "kind": "hc_meter",
+      "bg": "dark",
+      "eyebrow": "Проекты",
+      "title": "Больше",
+      "mark": {
+        "text": "маржи",
+        "at": 25.99
+      },
+      "meters": [
+        {
+          "label": "Клиенты",
+          "text": "больше",
+          "pct": 80,
+          "at": 26.303
+        },
+        {
+          "label": "Маржа",
+          "text": "больше",
+          "pct": 90,
+          "at": 26.93
+        }
+      ]
+    },
+    {
+      "shot": 10,
+      "kind": "hc_delta",
+      "bg": "dark",
+      "eyebrow": "Эффективность",
+      "tag": "с агентами",
+      "counter": {
+        "values": [
+          "×1",
+          "×5",
+          "×10"
+        ],
+        "at": 29.217,
+        "end_at": 29.717
+      },
+      "text": "в десятки раз",
+      "text_at": 29.017,
+      "bar_end_at": 30.467
+    },
+    {
+      "shot": 12,
+      "kind": "hc_links",
+      "bg": "dark",
+      "b1": {
+        "text": "Ссылки ниже"
+      },
+      "b2": {
+        "tag": "ЭФИР",
+        "text": "завтра",
+        "at": 32.752
+      },
+      "wl": {
+        "label": "Пишите кодовое слово",
+        "type_at": 33.329,
+        "at": 33.008,
+        "field": "Комментарий",
+        "button": "Отправить"
+      }
+    },
+    {
+      "shot": 13,
+      "kind": "hc_steps",
+      "bg": "dark",
+      "steps": [
+        {
+          "t": "Расскажу",
+          "at": 35.014
+        },
+        {
+          "t": "Агенты",
+          "at": 35.903
+        },
+        {
+          "t": "Автоматизация",
+          "at": 36.793
+        }
+      ],
+      "result": {
+        "label": "Ваша работа",
+        "wait": "вручную",
+        "done": "сама",
+        "at": 37.52
+      }
+    },
+    {
+      "shot": 14,
+      "kind": "hc_cta",
+      "bg": "dark",
+      "b2": {
+        "tag": "КАРТА",
+        "text": "План наблюдения"
+      },
+      "strip_pulses": [
+        {
+          "at": 40.825
+        }
+      ],
+      "reminder": {
+        "word": "ВЫХОДНЫЕ",
+        "avatar": "Я",
+        "label": "Комментарий",
+        "placeholder": "Добавьте комментарий…",
+        "send_label": "Отправить",
+        "sent_label": "Отправлено",
+        "done_text": "ГАЙД В ЛС",
+        "cps": 10,
+        "at": {
+          "word": "выходные",
+          "after": 38.24,
+          "before": 38.27
+        },
+        "type_at": {
+          "plus": 0.1,
+          "word": "выходные",
+          "after": 38.24,
+          "before": 38.27
+        },
+        "send_at": {
+          "plus": 0.45,
+          "word": "удобную",
+          "after": 39.02,
+          "before": 39.05
+        }
+      }
+    }
+  ],
+  "brand_candidates": [],
+  "brand_omissions": []
+}

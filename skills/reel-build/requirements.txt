@@ -1,0 +1,6 @@
+# Python deps of skills/reel-build (install into a project-local venv: uv venv --python 3.12 .venv)
+pytest>=8                      # tests
+faster-whisper>=1.1            # local re-recognition of the frozen cut (MIT)
+numpy>=1.26                    # frames, SSIM
+pillow>=10                     # contact sheets
+opencv-python-headless>=4.9,<5 # Haar face detector (BSD); 5.x dropped CascadeClassifier

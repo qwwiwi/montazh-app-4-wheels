@@ -1,0 +1,26 @@
+{
+  "head": {
+    "left": 201,
+    "top": 405,
+    "right": 966,
+    "chin": 1320
+  },
+  "ui_kit": "html-components",
+  "colours": {
+    "accent": "#D4FF00",
+    "accent_on_light": "#3F4A00",
+    "signal": "#D4FF00",
+    "signal_on_light": "#3F4A00",
+    "ink": "#24251E",
+    "paper": "#FAF8F2",
+    "grid": "rgba(36,37,30,.07)",
+    "dark": "#15150F",
+    "dark_card": "#1E1E17",
+    "card": "#FFFEFA",
+    "muted": "#8A8D7E",
+    "dim_on_light": "#4F5147",
+    "dim_on_dark": "#C9C7B8",
+    "cream": "#FAF8F2",
+    "plate": "rgba(21,21,15,.88)"
+  }
+}
