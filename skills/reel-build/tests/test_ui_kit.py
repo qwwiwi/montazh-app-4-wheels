@@ -1,6 +1,7 @@
 """html-components as the visual system of a reel: stylesheet adaptation, the config folder, the hc_* scene kinds."""
 
 import json
+import os
 import re
 from pathlib import Path
 
@@ -68,7 +69,7 @@ def test_config_ui_kit_must_be_a_kit_folder_inside_the_reel(tmp_path: Path) -> N
         load_config(cfg)
 
 
-KIT = Path(__file__).resolve().parents[3] / "in" / "html-components"
+KIT = Path(os.environ.get("REEL_LIBRARIES", Path(__file__).resolve().parents[4] / "reel-libraries")).expanduser() / "html-components"
 
 
 @pytest.mark.parametrize("kind", sorted(k for k in scenes.BUILDERS if k.startswith("hc_")))
