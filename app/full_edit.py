@@ -14,14 +14,16 @@ from decimal import Decimal
 from editor import INPUT, metadata
 from source_assets import supplied_source, attach_source, suggested_cues
 from pace import DEFAULT_SPEED, accelerate, check_speed
+from repo_paths import REPO
 
 
 HERE = Path(__file__).resolve().parent
+RUBRIC = REPO / "docs" / "GOLDEN.md"
 KEY_FILE = Path(os.environ.get("REEL_KEY_FILE", Path.home() / ".config/montazh-app-4-wheels/openrouter.key")).expanduser()
 
 
 def libraries():
-    return Path(os.environ.get("REEL_LIBRARIES", HERE.parent/"reel-libraries")).expanduser()
+    return Path(os.environ.get("REEL_LIBRARIES", REPO.parent/"reel-libraries")).expanduser()
 
 
 def configure_graphics(job,skill,words,head,candidates,omissions=None):
@@ -278,10 +280,10 @@ def local_defect(folder, stage):
 
 
 def settings():
-    skill = Path(os.environ.get("REEL_SKILL", HERE / "skills/reel-build")).expanduser().resolve()
+    skill = Path(os.environ.get("REEL_SKILL", REPO / "skills/reel-build")).expanduser().resolve()
     venv = skill / ".venv/bin/python"
     python = os.environ.get("REEL_PYTHON") or (str(venv) if venv.is_file() else sys.executable)
-    refs = Path(os.environ.get("REEL_REFERENCE_DIR", HERE / "references")).expanduser()
+    refs = Path(os.environ.get("REEL_REFERENCE_DIR", REPO / "references")).expanduser()
     return skill, python, [refs / f"{name}.mp4" for name in "ABC"]
 
 
@@ -432,9 +434,9 @@ def full_edit(src, dst, progress, *, resume=False, recut=False, speed=DEFAULT_SP
             if not original_review.is_relative_to(root_job) or sha(original_review)!=origin["review_sha256"]:
                 raise ValueError("Не удалось проверить исходное ревью для пересборки.")
             reviewed=original_review.parent
-    rubric = HERE / "GOLDEN.md"
+    rubric = RUBRIC
     env = dict(os.environ, DO_NOT_TRACK="1", PYTHONDONTWRITEBYTECODE="1")
-    env["HF_HOME"] = os.environ.get("REEL_HF_HOME", str(HERE/"jobs/.hf-cache"))
+    env["HF_HOME"] = os.environ.get("REEL_HF_HOME", str(REPO/"jobs/.hf-cache"))
     # The renderer, FFmpeg, browser and Whisper never need provider credentials.
     env.pop("REEL_OPENROUTER_API_KEY", None)
     env.pop("OPENROUTER_API_KEY", None)

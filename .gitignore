@@ -10,8 +10,8 @@ secrets/
 node_modules/
 .pytest_cache/
 references/
-official-media/**/*.png
-official-media/**/source.json
+assets/official-media/**/*.png
+assets/official-media/**/source.json
 *.mov
 *.MOV
 *.mp4

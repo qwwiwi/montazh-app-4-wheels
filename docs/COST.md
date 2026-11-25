@@ -10,7 +10,7 @@ Verified 2026-11-25 against the public OpenRouter endpoint catalogs. Listed rate
 | Gemini 4 Argon | Google AI Studio / Vertex global standard | 2 | 10 |
 | Gemini 4 Argon | Google AI Studio / Vertex priority | 3.60 | 18 |
 
-routing.py retrieves current endpoint prices before every paid request. The endpoint must attain both listed minima, be available, and fit the historical ceilings of $4/$20 for Opus and $1/$5 for Argon. Price ties use one compatible endpoint. The request pins its slug, sets a maximum input/output price, disallows fallback and selects the flex service tier when required. A catalog failure, a pricing trade-off or an unavailable minimum blocks the request. Billed totals depend on actual token usage, media, cache and reasoning.
+app/routing.py retrieves current endpoint prices before every paid request. The endpoint must attain both listed minima, be available, and fit the historical ceilings of $4/$20 for Opus and $1/$5 for Argon. Price ties use one compatible endpoint. The request pins its slug, sets a maximum input/output price, disallows fallback and selects the flex service tier when required. A catalog failure, a pricing trade-off or an unavailable minimum blocks the request. Billed totals depend on actual token usage, media, cache and reasoning.
 
 The enforced per-job API budget is USD 2 across all attempts. Resuming a job keeps its ledger. The separate weekly limit on the OpenRouter key still applies.
 

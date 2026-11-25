@@ -1,6 +1,6 @@
 """Fetch pinned reel assets and produce an offline catalog. Uses only Python stdlib and git.
 
-python3 prepare_libraries.py --root ../reel-libraries
+python3 app/prepare_libraries.py --root ../reel-libraries
 Use --offline to validate existing checkouts and rebuild the index without fetching.
 A dated snapshot of Kaelthas' optional local SVG cache is imported read-only.
 """
@@ -12,6 +12,8 @@ import re
 import shutil
 import subprocess
 import tempfile
+
+from repo_paths import OFFICIAL_MEDIA, REPO
 
 SOURCES = {
     'html-components': ('qwwiwi/html-components','f469383e2037521d83c9f7fd653fa79fc87813aa'),
@@ -133,7 +135,7 @@ def write_json(path,obj):
 
 
 def install_official_ai_marks(root):
-    bundle = Path(__file__).parent / "official-media/ai-brands"
+    bundle = OFFICIAL_MEDIA / "ai-brands"
     entries = read_json(bundle / "catalog.json")
     dest = root / "official-media/ai-brands"
     dest.mkdir(parents=True, exist_ok=True)
@@ -184,7 +186,7 @@ def prepare(root,cache,offline=False):
         brands.append(record(root,'simple:'+f.stem,titles.get(f.stem,f.stem),f,'simple-icons'))
     # The pinned catalogs lack amoCRM. Keep the publisher-supplied raster and
     # its provenance in the same audited catalog consumed by logo-company.
-    bundle=Path(__file__).parent/'official-media/amocrm'
+    bundle=OFFICIAL_MEDIA/'amocrm'
     if (bundle/'logo.png').is_file():
         dst=root/'official-media/amocrm/logo.png'
         dst.parent.mkdir(parents=True,exist_ok=True)
@@ -257,7 +259,7 @@ def prepare(root,cache,offline=False):
 
 if __name__=='__main__':
     cli=argparse.ArgumentParser(description=__doc__)
-    cli.add_argument('--root',type=Path,default=Path(__file__).resolve().parent.parent/'reel-libraries')
+    cli.add_argument('--root',type=Path,default=REPO.parent/'reel-libraries')
     cli.add_argument('--kaelthas-cache',type=Path,default=KAEL_CACHE)
     cli.add_argument('--offline',action='store_true')
     a=cli.parse_args()
