@@ -3,7 +3,7 @@
 Every function takes arrays or numbers and returns problems as strings (empty = pass), so each rule is tested with synthetic
 frames. Frames are BGR uint8 arrays (full 1080x1920 unless a name says «small»).
 
-Rules (repository GOLDEN.md and the owner's hard rules):
+Rules (repository docs/GOLDEN.md and the owner's hard rules):
 
 * caption: not across the seam, not clipped by the frame edge, not in 1520..1920, not over the face (``caption_problems``);
 * visual panel coverage from the first frame of a segment (``coverage_problem``): a cut must land on a card, not on an empty panel;

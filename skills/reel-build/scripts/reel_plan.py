@@ -2,7 +2,7 @@
 
 Every boundary and every timed item in the plan is anchored to a recognised word of the frozen cut (exact match, in a
 window after a given time), never to a hand-typed second. The plan is a JSON file written by the agent from the actual
-speech; this module loads it, resolves the anchors and validates the montage rhythm (see GOLDEN.md in the repository root):
+speech; this module loads it, resolves the anchors and validates the montage rhythm (see docs/GOLDEN.md in the repository):
 
 * shots are contiguous hard cuts of three types: split (visual above, speaker below), visual (full screen), speaker (full screen);
 * one scene per split / visual shot, none on a speaker shot; the scene's own timeline is anchored to the same words;

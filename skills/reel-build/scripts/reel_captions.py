@@ -1,6 +1,6 @@
 """Caption groups: proofreading file, grouping into flashes that accumulate up to two lines, timing.
 
-Canon (repository GOLDEN.md, reference reels): uppercase, one font, about 60 px, 1-3 words per flash, accumulating up to two lines, every
+Canon (repository docs/GOLDEN.md, reference reels): uppercase, one font, about 60 px, 1-3 words per flash, accumulating up to two lines, every
 word fades from semi-transparent to solid in about 0.3 s; the group clears when it is full, at a sentence end, at a pause or
 at a shot change. Rules the code keeps:
 

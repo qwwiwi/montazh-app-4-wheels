@@ -2,7 +2,7 @@
 """Generate the HyperFrames project (HTML + paused GSAP timeline) for one reel.
 
 Input: the frozen cut, proofread words, plan, config, head track. Output: a project folder with ``index.html`` and local
-assets (cut, fonts, GSAP). The composition follows the reference canon (repository GOLDEN.md): an exact 50/50 split (visual y 0..960, speaker
+assets (cut, fonts, GSAP). The composition follows the reference canon (repository docs/GOLDEN.md): an exact 50/50 split (visual y 0..960, speaker
 y 960..1920), full-screen visuals and full-screen speaker «breaths», detailed UI scenes that change state every 0.5-2 s, captions
 that accumulate word by word and move with the shot type. Nothing is written by hand: every caption word and every scene
 anchor comes from the recognised words.

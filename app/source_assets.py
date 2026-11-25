@@ -10,8 +10,11 @@ import struct
 import subprocess
 from urllib.parse import urlsplit
 
+from repo_paths import OFFICIAL_MEDIA
+
 
 MAX_IMAGE = 12 * 1024 * 1024
+AMO_BUNDLE = OFFICIAL_MEDIA / 'amocrm'
 AMO = ('amocrm','амаcrm','амосрм','амсрм','амо срм','амо crm','амо црм','ама срм')
 
 
@@ -66,7 +69,7 @@ def supplied_source(job_folder, transcript):
     folder=job_folder/'source-material'
     provided=(folder/'source.json').is_file()
     if not provided:
-        folder=Path(__file__).parent/'official-media/amocrm'
+        folder=AMO_BUNDLE
     if not (folder/'source.json').is_file():
         return None
     meta=json.loads((folder/'source.json').read_text())

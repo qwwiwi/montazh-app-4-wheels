@@ -18,8 +18,8 @@ from pace import DEFAULT_SPEED, check_speed
 from editor import edit
 from full_edit import availability, can_recut, can_resume, full_edit
 from model_stages import budget_snapshot
+from repo_paths import REPO as ROOT
 
-ROOT = Path(__file__).resolve().parent
 JOBS = ROOT / 'jobs'
 POOL = ThreadPoolExecutor(max_workers=1)
 RESUME_LOCK = Lock()
@@ -141,7 +141,7 @@ class Handler(BaseHTTPRequestHandler):
         if path=='/':return self.reply((ROOT/'index.html').read_bytes(),mime='text/html; charset=utf-8')
         if path=='/pipeline':return self.reply((ROOT/'pipeline.html').read_bytes(),mime='text/html; charset=utf-8')
         if path=='/api/modes':return self.reply(availability())
-        if path=='/demo.mp4':return self.video(ROOT/'demo.mp4')
+        if path=='/demo.mp4':return self.video(ROOT/'assets'/'demo.mp4')
         preview=re.fullmatch(r'/api/jobs/([a-f0-9]{32})/preview/(1\.[34])',path)
         if preview:
             file=JOBS/preview[1]/'previews'/(preview[2]+'.mp4')

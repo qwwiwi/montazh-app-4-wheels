@@ -1,8 +1,8 @@
 """Cross-check Argon's observed logo cues against the timed, resolved asset manifest."""
 import math
 import json
-from pathlib import Path
 from functools import lru_cache
+from repo_paths import OFFICIAL_MEDIA
 
 CHECK = 'brand_identity_timing'
 FAMILY = {
@@ -11,7 +11,7 @@ FAMILY = {
 }
 @lru_cache(maxsize=1)
 def pinned_assets():
-    catalog = Path(__file__).parent/'official-media'/'ai-brands'/'catalog.json'
+    catalog = OFFICIAL_MEDIA/'ai-brands'/'catalog.json'
     return {item['id']:item for item in json.loads(catalog.read_text())}
 
 PLAN_RULE = (
