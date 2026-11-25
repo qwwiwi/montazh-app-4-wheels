@@ -1,0 +1,948 @@
+{
+  "shots": [
+    {
+      "from": 0,
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "на",
+        "after": 3.68,
+        "before": 3.71
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "И",
+        "after": 6.64,
+        "before": 6.67
+      },
+      "type": "speaker"
+    },
+    {
+      "from": {
+        "word": "выше",
+        "after": 8.44,
+        "before": 8.47
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "схеме",
+        "after": 12.2,
+        "before": 12.23
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "рисунок",
+        "after": 14.28,
+        "before": 14.31
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "крайние",
+        "after": 17.68,
+        "before": 17.71
+      },
+      "type": "speaker"
+    },
+    {
+      "from": {
+        "word": "пишет",
+        "after": 19.22,
+        "before": 19.25
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "И",
+        "after": 23.52,
+        "before": 23.55
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "даже",
+        "after": 25.88,
+        "before": 25.91
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "наблюдения",
+        "after": 29.02,
+        "before": 29.05
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "Эти",
+        "after": 31.04,
+        "before": 31.07
+      },
+      "type": "speaker"
+    },
+    {
+      "from": {
+        "word": "повторить.",
+        "after": 32.44,
+        "before": 32.47
+      },
+      "type": "split"
+    },
+    {
+      "from": {
+        "word": "сезонные",
+        "after": 35.0,
+        "before": 35.03
+      },
+      "type": "visual"
+    },
+    {
+      "from": {
+        "word": "выходные",
+        "after": 38.24,
+        "before": 38.27
+      },
+      "type": "split"
+    }
+  ],
+  "scenes": [
+    {
+      "shot": 0,
+      "kind": "hook",
+      "bg": "dark",
+      "calendar_title": "ОТЛОЖЕНО",
+      "bar_label": "3 месяца",
+      "counter": {
+        "at": 0,
+        "end_at": {
+          "word": "терминал.",
+          "after": 2.96,
+          "before": 2.99
+        },
+        "value": 90,
+        "start": 7,
+        "label": "дней"
+      },
+      "tiles": [
+        {
+          "text": "1 мес",
+          "at": {
+            "word": "удобно",
+            "after": 0.18,
+            "before": 0.21
+          }
+        },
+        {
+          "text": "2 мес",
+          "at": {
+            "word": "смотреть",
+            "after": 0.38,
+            "before": 0.41
+          }
+        },
+        {
+          "text": "3 мес",
+          "at": {
+            "word": "звёзды",
+            "after": 0.84,
+            "before": 0.87
+          }
+        }
+      ],
+      "term_title": "терминал",
+      "term_lines": [
+        {
+          "text": "~ % claude",
+          "cps": 16,
+          "at": {
+            "word": "Север",
+            "after": 1.5,
+            "before": 1.53
+          }
+        },
+        {
+          "text": "Claude Code",
+          "cls": "out",
+          "cps": 40,
+          "at": {
+            "plus": 0.3,
+            "word": "Карта,",
+            "after": 1.8,
+            "before": 1.83
+          }
+        },
+        {
+          "text": "> ",
+          "cps": 16,
+          "at": {
+            "word": "город",
+            "after": 2.08,
+            "before": 2.11
+          }
+        }
+      ],
+      "stamp": {
+        "text": "БОЯЛСЯ",
+        "at": {
+          "word": "боялся",
+          "after": 2.42,
+          "before": 2.45
+        }
+      },
+      "term_prefill": [
+        "~ % ls",
+        "notes  shop"
+      ]
+    },
+    {
+      "shot": 1,
+      "kind": "terminal",
+      "bg": "dark",
+      "title": "zsh — чёрный экран",
+      "lines": [
+        {
+          "text": "$ cd ~/shop",
+          "cps": 40,
+          "at": {
+            "word": "на",
+            "after": 3.68,
+            "before": 3.71
+          }
+        },
+        {
+          "text": "$ npm install",
+          "cps": 40,
+          "at": {
+            "word": "уже",
+            "after": 4.16,
+            "before": 4.19
+          }
+        },
+        {
+          "text": "$ git status",
+          "cps": 40,
+          "at": {
+            "word": "Первый",
+            "after": 4.6,
+            "before": 4.63
+          }
+        },
+        {
+          "text": "$ docker compose up -d",
+          "cps": 45,
+          "at": {
+            "word": "шаг",
+            "after": 5.0,
+            "before": 5.03
+          }
+        },
+        {
+          "text": "error: permission denied",
+          "cls": "err",
+          "cps": 70,
+          "at": {
+            "word": "бумажную",
+            "after": 5.74,
+            "before": 5.77
+          }
+        }
+      ],
+      "counter_label": "команд",
+      "error_label": "ОШИБКА",
+      "status_label": "статус",
+      "ok_label": "ОК"
+    },
+    {
+      "shot": 3,
+      "kind": "code_sea",
+      "bg": "dark",
+      "profile_title": "ПРОФИЛЬ",
+      "profile_rows": [
+        {
+          "text": "Программист",
+          "cross_at": {
+            "word": "Здесь",
+            "after": 8.86,
+            "before": 8.89
+          }
+        },
+        {
+          "text": "Читать код",
+          "cross_at": {
+            "word": "стрелку",
+            "after": 10.62,
+            "before": 10.65
+          }
+        }
+      ],
+      "code_title": "app.js",
+      "lines_counter": {
+        "at": {
+          "word": "обычный",
+          "after": 9.52,
+          "before": 9.55
+        },
+        "end_at": {
+          "word": "на.",
+          "after": 11.84,
+          "before": 11.87
+        },
+        "value": 48213,
+        "label": "строк кода"
+      },
+      "code_lines": [
+        "import { db } from './db'",
+        "const rows = await db.query()",
+        "function render(list) {",
+        "  for (const o of list) {",
+        "    if (!o.paid) continue",
+        "// fix later",
+        "export async function sync() {",
+        "  const res = await fetch(API)",
+        "  return data.items.map(parse)",
+        "const cache = new Map()",
+        "if (!cache.has(key)) load(key)",
+        "export default render"
+      ],
+      "no_label": "НЕ"
+    },
+    {
+      "shot": 4,
+      "kind": "toggle",
+      "bg": "accent",
+      "title": "НАСТРОЙКИ",
+      "heading": "Нужен ли терминал?",
+      "rows": [
+        {
+          "text": "Терминал",
+          "sub": "командная строка",
+          "start_on": true,
+          "at": {
+            "word": "терминал",
+            "after": 12.74,
+            "before": 12.77
+          }
+        },
+        {
+          "text": "Команды",
+          "sub": "ввод вручную",
+          "start_on": true,
+          "at": {
+            "plus": 0.38,
+            "word": "терминал",
+            "after": 12.74,
+            "before": 12.77
+          }
+        },
+        {
+          "text": "Чёрный экран",
+          "sub": "окно с текстом",
+          "start_on": true,
+          "at": {
+            "plus": 0.74,
+            "word": "терминал",
+            "after": 12.74,
+            "before": 12.77
+          }
+        },
+        {
+          "text": "Приложение",
+          "sub": "обычное окно",
+          "start_on": false,
+          "at": {
+            "word": "так",
+            "after": 13.84,
+            "before": 13.87
+          }
+        }
+      ],
+      "stamp": {
+        "text": "НЕ НУЖЕН",
+        "at": {
+          "word": "нужен.",
+          "after": 13.98,
+          "before": 14.01
+        }
+      }
+    },
+    {
+      "shot": 5,
+      "kind": "app",
+      "bg": "light",
+      "install_title": "УСТАНОВКА",
+      "install_sub": "приложение",
+      "install_btn": "Скачать",
+      "download": {
+        "at": {
+          "plus": 0.05,
+          "word": "приложение",
+          "after": 14.98,
+          "before": 15.01
+        },
+        "dur": 0.9
+      },
+      "ticks": [
+        {
+          "text": "Скачал",
+          "at": {
+            "word": "небом",
+            "after": 15.56,
+            "before": 15.59
+          }
+        },
+        {
+          "text": "Открыл",
+          "at": {
+            "word": "Найдите",
+            "after": 15.96,
+            "before": 15.99
+          }
+        },
+        {
+          "text": "Работаешь",
+          "at": {
+            "word": "ковш",
+            "after": 16.3,
+            "before": 16.33
+          }
+        }
+      ],
+      "open_at": {
+        "word": "Найдите",
+        "after": 15.96,
+        "before": 15.99
+      },
+      "app_title": "Claude Code",
+      "welcome": "Что делаем?",
+      "prompt": {
+        "text": "Сделай лендинг",
+        "at": {
+          "word": "ковш",
+          "after": 16.3,
+          "before": 16.33
+        }
+      },
+      "reply": {
+        "text": "Готово, смотри превью",
+        "at": {
+          "plus": 0.2,
+          "word": "две.",
+          "after": 17.1,
+          "before": 17.13
+        }
+      },
+      "send_at": {
+        "plus": 0.12,
+        "word": "любым",
+        "after": 16.8,
+        "before": 16.83
+      }
+    },
+    {
+      "shot": 7,
+      "kind": "agent_chat",
+      "bg": "dark",
+      "term_title": "агент",
+      "term_tag": "АГЕНТ ПИШЕТ",
+      "term_lines": [
+        {
+          "text": "$ npx create-next-app shop",
+          "cps": 60,
+          "at": {
+            "word": "пишет",
+            "after": 19.22,
+            "before": 19.25
+          }
+        },
+        {
+          "text": "+ index.html",
+          "cls": "ok",
+          "cps": 60,
+          "at": {
+            "plus": 0.1,
+            "word": "Дальше",
+            "after": 19.58,
+            "before": 19.61
+          }
+        },
+        {
+          "text": "+ style.css",
+          "cls": "ok",
+          "cps": 60,
+          "at": {
+            "plus": -0.1,
+            "word": "полезно.",
+            "after": 20.24,
+            "before": 20.27
+          }
+        },
+        {
+          "text": "ready: localhost:3000",
+          "cls": "ok",
+          "cps": 60,
+          "at": {
+            "plus": -0.1,
+            "word": "сравнить",
+            "after": 20.64,
+            "before": 20.67
+          }
+        }
+      ],
+      "you": {
+        "text": "Сделай сайт для кофейни",
+        "at": {
+          "word": "фотографии",
+          "after": 20.88,
+          "before": 20.91
+        }
+      },
+      "plan_title": "ПЛАН АГЕНТА",
+      "plan_at": {
+        "word": "возле",
+        "after": 22.34,
+        "before": 22.37
+      },
+      "plan": [
+        {
+          "text": "Страница меню",
+          "at": {
+            "word": "фонаря",
+            "after": 22.74,
+            "before": 22.77
+          }
+        },
+        {
+          "text": "Корзина",
+          "at": {
+            "word": "второй.",
+            "after": 22.86,
+            "before": 22.89
+          }
+        },
+        {
+          "text": "Оплата",
+          "at": {
+            "plus": 0.25,
+            "word": "второй.",
+            "after": 22.86,
+            "before": 22.89
+          }
+        }
+      ],
+      "counter": {
+        "at": {
+          "word": "пишет",
+          "after": 19.22,
+          "before": 19.25
+        },
+        "end_at": {
+          "word": "возле",
+          "after": 22.34,
+          "before": 22.37
+        },
+        "value": 240,
+        "label": "строк"
+      },
+      "input_placeholder": "Опиши, что нужно…"
+    },
+    {
+      "shot": 8,
+      "kind": "confirm",
+      "bg": "accent",
+      "title": "АГЕНТ",
+      "question": "Нашёл 3 файла. Применить?",
+      "files": [
+        {
+          "text": "index.html",
+          "at": {
+            "plus": 0.1,
+            "word": "И",
+            "after": 23.52,
+            "before": 23.55
+          }
+        },
+        {
+          "text": "cart.js",
+          "at": {
+            "plus": 0.05,
+            "word": "нажимаешь",
+            "after": 23.78,
+            "before": 23.81
+          }
+        },
+        {
+          "text": "style.css",
+          "at": {
+            "plus": 0.3,
+            "word": "нажимаешь",
+            "after": 23.78,
+            "before": 23.81
+          }
+        }
+      ],
+      "yes": "Да",
+      "no": "Нет",
+      "click": {
+        "at": {
+          "word": "«Да»",
+          "after": 24.2,
+          "before": 24.23
+        }
+      },
+      "preview_title": "localhost:3000",
+      "done_text": "Готово",
+      "preview_heading": "Кофейня",
+      "preview_line": "Сайт работает",
+      "preview_btn": "В корзину",
+      "done_at": {
+        "word": "и",
+        "after": 24.7,
+        "before": 24.73
+      },
+      "live_at": {
+        "word": "работать.",
+        "after": 25.56,
+        "before": 25.59
+      },
+      "cart_label": "Корзина",
+      "cart_at": {
+        "plus": 0.1,
+        "word": "отличается",
+        "after": 25.22,
+        "before": 25.25
+      }
+    },
+    {
+      "shot": 9,
+      "kind": "files",
+      "bg": "light",
+      "list_title": "ПРОЕКТ",
+      "files": [
+        {
+          "text": "CLAUDE.md",
+          "at": {
+            "word": "же",
+            "after": 26.88,
+            "before": 26.91
+          }
+        },
+        {
+          "text": "skills/",
+          "at": {
+            "word": "время",
+            "after": 28.28,
+            "before": 28.31
+          }
+        },
+        {
+          "text": "README.md"
+        },
+        {
+          "text": "src/"
+        },
+        {
+          "text": ".gitignore"
+        }
+      ],
+      "pv_title": "CLAUDE.md",
+      "claude_md": [
+        {
+          "text": "# Правила",
+          "at": {
+            "word": "же",
+            "after": 26.88,
+            "before": 26.91
+          }
+        },
+        {
+          "text": "- по-русски",
+          "at": {
+            "plus": 0.32,
+            "word": "настройках",
+            "after": 27.08,
+            "before": 27.11
+          }
+        },
+        {
+          "text": "- сначала план",
+          "at": {
+            "plus": 0.2,
+            "word": "разобраться",
+            "after": 27.72,
+            "before": 27.75
+          }
+        }
+      ],
+      "switch_at": {
+        "word": "время",
+        "after": 28.28,
+        "before": 28.31
+      },
+      "skills_title": "СКИЛЛЫ",
+      "skills": [
+        {
+          "text": "seo.md",
+          "at": {
+            "plus": 0.1,
+            "word": "время",
+            "after": 28.28,
+            "before": 28.31
+          }
+        },
+        {
+          "text": "deploy.md",
+          "at": {
+            "plus": 0.3,
+            "word": "время",
+            "after": 28.28,
+            "before": 28.31
+          }
+        },
+        {
+          "text": "review.md",
+          "at": {
+            "plus": 0.5,
+            "word": "время",
+            "after": 28.28,
+            "before": 28.31
+          }
+        }
+      ]
+    },
+    {
+      "shot": 10,
+      "kind": "workspace",
+      "bg": "dark",
+      "title": "workspace",
+      "heading": "Рабочий workspace",
+      "entries": [
+        {
+          "text": "CLAUDE.md",
+          "sub": "правила",
+          "at": {
+            "plus": 0.1,
+            "word": "наблюдения",
+            "after": 29.02,
+            "before": 29.05
+          }
+        },
+        {
+          "text": "skills/",
+          "sub": "навыки",
+          "at": {
+            "plus": 0.5,
+            "word": "наблюдения",
+            "after": 29.02,
+            "before": 29.05
+          }
+        },
+        {
+          "text": "projects/",
+          "sub": "проекты",
+          "at": {
+            "word": "направление",
+            "after": 29.66,
+            "before": 29.69
+          }
+        },
+        {
+          "text": "notes/",
+          "sub": "заметки",
+          "at": {
+            "word": "и",
+            "after": 29.86,
+            "before": 29.89
+          }
+        },
+        {
+          "text": "guide/",
+          "sub": "гайд",
+          "at": {
+            "word": "облачность",
+            "after": 30.36,
+            "before": 30.39
+          }
+        }
+      ]
+    },
+    {
+      "shot": 12,
+      "kind": "cta_comment",
+      "bg": "dark",
+      "title": "КОММЕНТАРИИ",
+      "avatar": "Я",
+      "placeholder": "Добавьте комментарий…",
+      "word": "ВЫХОДНЫЕ",
+      "posted_meta": "вы · только что",
+      "type_at": {
+        "word": "«выходные»",
+        "after": 33.44,
+        "before": 33.47
+      },
+      "cps": 14,
+      "send_at": {
+        "plus": 0.15,
+        "word": "легко",
+        "after": 34.1,
+        "before": 34.13
+      },
+      "status": "кодовое слово → гайд в личные сообщения",
+      "bar_at": {
+        "plus": 0.3,
+        "word": "легко",
+        "after": 34.1,
+        "before": 34.13
+      },
+      "bar_dur": 0.5
+    },
+    {
+      "shot": 13,
+      "kind": "dm",
+      "bg": "accent",
+      "inbox_title": "ЛИЧНЫЕ СООБЩЕНИЯ",
+      "new": {
+        "avatar": "Г",
+        "name": "Гайд",
+        "text": "Claude Code за одни выходные",
+        "badge": "1",
+        "at": {
+          "word": "сезонные",
+          "after": 35.0,
+          "before": 35.03
+        }
+      },
+      "guide_title": "Гайд.pdf",
+      "guide_kicker": "ГАЙД",
+      "guide_heading": "Claude Code за одни выходные",
+      "guide_at": {
+        "word": "изменения",
+        "after": 35.28,
+        "before": 35.31
+      },
+      "checks": [
+        {
+          "text": "Claude Code",
+          "at": {
+            "plus": 0.15,
+            "word": "разобраться",
+            "after": 36.22,
+            "before": 36.25
+          }
+        },
+        {
+          "text": "CLAUDE.md",
+          "at": {
+            "word": "фонарик",
+            "after": 36.88,
+            "before": 36.91
+          }
+        },
+        {
+          "text": "скиллы",
+          "at": {
+            "word": "с",
+            "after": 37.48,
+            "before": 37.51
+          }
+        },
+        {
+          "text": "workspace",
+          "at": {
+            "word": "красным",
+            "after": 37.68,
+            "before": 37.71
+          }
+        }
+      ],
+      "guide_tag": "PDF",
+      "list_heading": "Внутри гайда",
+      "flip_at": {
+        "plus": -0.1,
+        "word": "карту",
+        "after": 35.86,
+        "before": 35.89
+      }
+    },
+    {
+      "shot": 14,
+      "kind": "x10",
+      "bg": "dark",
+      "title": "ЭФФЕКТИВНОСТЬ",
+      "counter": {
+        "at": {
+          "word": "площадку",
+          "after": 39.62,
+          "before": 39.65
+        },
+        "end_at": {
+          "word": "раз",
+          "after": 41.04,
+          "before": 41.07
+        }
+      },
+      "reminder": {
+        "word": "ВЫХОДНЫЕ",
+        "avatar": "Я",
+        "label": "Комментарий",
+        "placeholder": "Добавьте комментарий…",
+        "send_label": "Отправить",
+        "sent_label": "Отправлено",
+        "done_text": "ГАЙД В ЛС",
+        "cps": 10,
+        "at": {
+          "word": "выходные",
+          "after": 38.24,
+          "before": 38.27
+        },
+        "type_at": {
+          "plus": 0.1,
+          "word": "выходные",
+          "after": 38.24,
+          "before": 38.27
+        },
+        "send_at": {
+          "plus": 0.45,
+          "word": "удобную",
+          "after": 39.02,
+          "before": 39.05
+        }
+      }
+    }
+  ],
+  "cta": {
+    "from": {
+      "word": "повторить.",
+      "after": 32.44,
+      "before": 32.47
+    },
+    "to": {
+      "word": "выходные",
+      "after": 38.24,
+      "before": 38.27
+    },
+    "word": "ВЫХОДНЫЕ",
+    "word_anchor": {
+      "word": "«выходные»",
+      "after": 33.44,
+      "before": 33.47
+    }
+  },
+  "accent_words": [
+    "claude",
+    "code",
+    "выходные"
+  ],
+  "repeats_ok": []
+}
