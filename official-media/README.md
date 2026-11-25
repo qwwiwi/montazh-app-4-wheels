@@ -14,3 +14,11 @@ Before preparing the logo catalog or running the official-mark integration tests
 | Gemini | Gemini product icon | [Gemini](https://gemini.google.com/) |
 
 The catalog records the direct publisher image URLs. The publisher marks retain their respective owners and are fetched for local use. For website or news inserts, supply a screenshot you have permission to use and record its source URL and credit in the editor. Supply licensed reference videos locally as described in the project README.
+
+## Optional amoCRM graphics
+
+Run `python3 official-media/prepare-amocrm.py` before rebuilding the logo catalog with `prepare_libraries.py`. This optional command requires curl, FFmpeg, Poppler's `pdfimages`, Node, the globally installed HyperFrames package and Chrome. Set `REEL_CHROME` if your browser is installed elsewhere.
+
+The script opens the [official amoCRM homepage](https://www.amocrm.ru/) in a fresh browser profile and saves the current page. It crops the official wordmark from the publisher's [image sprite](https://www.amocrm.ru/static/images/sprite.png?070720161242) and extracts two interface figures from [PDF page 34](https://www.amocrm.ru/static/assets/education/amocrm_2_instruction.pdf#page=34) and [PDF page 36](https://www.amocrm.ru/static/assets/education/amocrm_2_instruction.pdf#page=36) of the amoCRM training guide. The inbox crop excludes the sample contact sidebar. The two static publisher downloads are hash-pinned. The live homepage can change, so its capture date and actual PNG hash are recorded on each fresh setup.
+
+The verified local bundle is published atomically to `official-media/amocrm/`. Running the command again checks the prepared files. `source.json` contains the publisher URLs, credits, speech cues and PNG hashes used by the editor. All generated files are gitignored. Publishers retain their rights; review your intended use before distributing a finished video.
