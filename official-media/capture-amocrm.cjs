@@ -15,8 +15,8 @@ async function capture(filename, executablePath) {
       throw new Error("Publisher homepage did not load.");
     }
     await page.waitForFunction(() => /amoCRM/i.test(document.title) &&
-      document.body.innerText.length > 500 && document.querySelector(".page_header__logo_image"));
-    await page.evaluate(() => document.fonts.ready);
+      /клиент|продаж/i.test(document.body.innerText) && document.querySelector(".page_header__logo_image"));
+    await page.evaluate(() => Promise.race([document.fonts.ready, new Promise(resolve => setTimeout(resolve, 3500))]));
     await page.waitForNetworkIdle({idleTime:500,timeout:5000}).catch(() => {});
     await page.screenshot({path:filename});
   } finally {

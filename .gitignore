@@ -16,5 +16,3 @@ official-media/**/source.json
 *.MOV
 *.mp4
 !demo.mp4
-official-media/.prepare-amo-*/
-official-media/amocrm/
